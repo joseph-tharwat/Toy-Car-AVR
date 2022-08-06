@@ -1,0 +1,532 @@
+Archive member included because of file (symbol)
+
+f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              ./USART/USART_prog.o (__udivmodsi4)
+f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./USART/USART_prog.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+USART_CallBack_DATA_EMBTY
+                    0x2               ./USART/USART_prog.o
+TIMER2_CTC_CallBack
+                    0x2               ./Timer/TIMER_prog.o
+TIMER2_OV_CallBack  0x2               ./Timer/TIMER_prog.o
+TIMER0_CTC_CallBack
+                    0x2               ./Timer/TIMER_prog.o
+TIMER0_OV_CallBack  0x2               ./Timer/TIMER_prog.o
+USART_CallBack_ISR_COMP_RX
+                    0x2               ./USART/USART_prog.o
+USART_CallBack_COMP_TX
+                    0x2               ./USART/USART_prog.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./USART/USART_prog.o
+LOAD ./Timer/TIMER_prog.o
+LOAD ./GIE/GIE_prog.o
+LOAD ./DIO/DIO_prog.o
+LOAD ./main.o
+LOAD f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x13ca
+ *(.vectors)
+ .vectors       0x00000000       0x54 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000078                __vector_1
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_6
+                0x00000078                __vector_3
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_7
+                0x00000078                __vector_9
+                0x00000078                __vector_2
+                0x00000078                __vector_8
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./USART/USART_prog.o
+ .text          0x0000007c        0x0 ./Timer/TIMER_prog.o
+ .text          0x0000007c        0x0 ./GIE/GIE_prog.o
+ .text          0x0000007c        0x0 ./DIO/DIO_prog.o
+ .text          0x0000007c        0x0 ./main.o
+ .text          0x0000007c        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x0000007c        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.__vector_13
+                0x0000007c       0x5a ./USART/USART_prog.o
+                0x0000007c                __vector_13
+ .text.__vector_14
+                0x000000d6       0x5a ./USART/USART_prog.o
+                0x000000d6                __vector_14
+ .text.__vector_15
+                0x00000130       0x5a ./USART/USART_prog.o
+                0x00000130                __vector_15
+ .text.USART_vid_INTIAL
+                0x0000018a      0x12c ./USART/USART_prog.o
+                0x0000018a                USART_vid_INTIAL
+ .text.USART_vid_SendChar
+                0x000002b6       0x2e ./USART/USART_prog.o
+                0x000002b6                USART_vid_SendChar
+ .text.USART_vid_SendString
+                0x000002e4       0x38 ./USART/USART_prog.o
+                0x000002e4                USART_vid_SendString
+ .text.USART_u8_ReadChar
+                0x0000031c       0x2e ./USART/USART_prog.o
+                0x0000031c                USART_u8_ReadChar
+ .text.USART_vid_SetCallBack
+                0x0000034a       0x58 ./USART/USART_prog.o
+                0x0000034a                USART_vid_SetCallBack
+ .text.USART_vid_Enable_RXInt
+                0x000003a2       0x1c ./USART/USART_prog.o
+                0x000003a2                USART_vid_Enable_RXInt
+ .text.USART_vid_Disable_RXInt
+                0x000003be       0x1c ./USART/USART_prog.o
+                0x000003be                USART_vid_Disable_RXInt
+ .text.USART_vid_Enable_TXInt
+                0x000003da       0x1c ./USART/USART_prog.o
+                0x000003da                USART_vid_Enable_TXInt
+ .text.USART_vid_Disable_TXInt
+                0x000003f6       0x1c ./USART/USART_prog.o
+                0x000003f6                USART_vid_Disable_TXInt
+ .text.USART_vid_Enable_DataEmptyInt
+                0x00000412       0x1c ./USART/USART_prog.o
+                0x00000412                USART_vid_Enable_DataEmptyInt
+ .text.USART_vid_Disable_DataEmptyInt
+                0x0000042e       0x1c ./USART/USART_prog.o
+                0x0000042e                USART_vid_Disable_DataEmptyInt
+ .text.TIMER0_void_SetOVCallBack
+                0x0000044a       0x24 ./Timer/TIMER_prog.o
+                0x0000044a                TIMER0_void_SetOVCallBack
+ .text.TIMER0_void_SetCTCCallBack
+                0x0000046e       0x24 ./Timer/TIMER_prog.o
+                0x0000046e                TIMER0_void_SetCTCCallBack
+ .text.__vector_11
+                0x00000492       0x5a ./Timer/TIMER_prog.o
+                0x00000492                __vector_11
+ .text.__vector_10
+                0x000004ec       0x5a ./Timer/TIMER_prog.o
+                0x000004ec                __vector_10
+ .text.TIMER2_void_SetOVCallBack
+                0x00000546       0x24 ./Timer/TIMER_prog.o
+                0x00000546                TIMER2_void_SetOVCallBack
+ .text.TIMER2_void_SetCTCCallBack
+                0x0000056a       0x24 ./Timer/TIMER_prog.o
+                0x0000056a                TIMER2_void_SetCTCCallBack
+ .text.__vector_5
+                0x0000058e       0x5a ./Timer/TIMER_prog.o
+                0x0000058e                __vector_5
+ .text.__vector_4
+                0x000005e8       0x5a ./Timer/TIMER_prog.o
+                0x000005e8                __vector_4
+ .text.TIMER0_vid_Init
+                0x00000642       0xb4 ./Timer/TIMER_prog.o
+                0x00000642                TIMER0_vid_Init
+ .text.TIMER0_void_SetTimerReg
+                0x000006f6       0x1c ./Timer/TIMER_prog.o
+                0x000006f6                TIMER0_void_SetTimerReg
+ .text.TIMER0_vid_SetCompareReg
+                0x00000712       0x1c ./Timer/TIMER_prog.o
+                0x00000712                TIMER0_vid_SetCompareReg
+ .text.TIMER0_void_EnableOVInt
+                0x0000072e       0x1c ./Timer/TIMER_prog.o
+                0x0000072e                TIMER0_void_EnableOVInt
+ .text.TIMER0_void_DisableOVInt
+                0x0000074a       0x1c ./Timer/TIMER_prog.o
+                0x0000074a                TIMER0_void_DisableOVInt
+ .text.TIMER0_void_EnableCTCInt
+                0x00000766       0x1c ./Timer/TIMER_prog.o
+                0x00000766                TIMER0_void_EnableCTCInt
+ .text.TIMER0_void_DisableCTCInt
+                0x00000782       0x1c ./Timer/TIMER_prog.o
+                0x00000782                TIMER0_void_DisableCTCInt
+ .text.TIMER2_vid_Init
+                0x0000079e       0xb4 ./Timer/TIMER_prog.o
+                0x0000079e                TIMER2_vid_Init
+ .text.TIMER2_void_SetTimerReg
+                0x00000852       0x1c ./Timer/TIMER_prog.o
+                0x00000852                TIMER2_void_SetTimerReg
+ .text.TIMER2_vid_SetCompareReg
+                0x0000086e       0x1c ./Timer/TIMER_prog.o
+                0x0000086e                TIMER2_vid_SetCompareReg
+ .text.TIMER2_void_EnableOVInt
+                0x0000088a       0x1c ./Timer/TIMER_prog.o
+                0x0000088a                TIMER2_void_EnableOVInt
+ .text.TIMER2_void_DisableOVInt
+                0x000008a6       0x1c ./Timer/TIMER_prog.o
+                0x000008a6                TIMER2_void_DisableOVInt
+ .text.TIMER2_void_EnableCTCInt
+                0x000008c2       0x1c ./Timer/TIMER_prog.o
+                0x000008c2                TIMER2_void_EnableCTCInt
+ .text.TIMER2_void_DisableCTCInt
+                0x000008de       0x1c ./Timer/TIMER_prog.o
+                0x000008de                TIMER2_void_DisableCTCInt
+ .text.GIE_vid_INTERENABLE
+                0x000008fa       0x1c ./GIE/GIE_prog.o
+                0x000008fa                GIE_vid_INTERENABLE
+ .text.GIE_vid_INTERDISABLE
+                0x00000916       0x1c ./GIE/GIE_prog.o
+                0x00000916                GIE_vid_INTERDISABLE
+ .text.DIO_vid_Init
+                0x00000932       0x2e ./DIO/DIO_prog.o
+                0x00000932                DIO_vid_Init
+ .text.DIO_vid_SetPinVal
+                0x00000960      0x1f4 ./DIO/DIO_prog.o
+                0x00000960                DIO_vid_SetPinVal
+ .text.DIO_vid_ClearPinVal
+                0x00000b54       0x20 ./DIO/DIO_prog.o
+                0x00000b54                DIO_vid_ClearPinVal
+ .text.DIO_vid_SetPinConf
+                0x00000b74      0x28c ./DIO/DIO_prog.o
+                0x00000b74                DIO_vid_SetPinConf
+ .text.DIO_vid_SetPinPullup
+                0x00000e00      0x1aa ./DIO/DIO_prog.o
+                0x00000e00                DIO_vid_SetPinPullup
+ .text.DIO_u8_GetPinVal
+                0x00000faa      0x100 ./DIO/DIO_prog.o
+                0x00000faa                DIO_u8_GetPinVal
+ .text.DIO_vid_SetPortVal
+                0x000010aa       0x82 ./DIO/DIO_prog.o
+                0x000010aa                DIO_vid_SetPortVal
+ .text.DIO_vid_ClearPortVal
+                0x0000112c       0x20 ./DIO/DIO_prog.o
+                0x0000112c                DIO_vid_ClearPortVal
+ .text.DIO_u8_GetPortVal
+                0x0000114c       0x86 ./DIO/DIO_prog.o
+                0x0000114c                DIO_u8_GetPortVal
+ .text.main     0x000011d2      0x1b0 ./main.o
+                0x000011d2                main
+ .text.libgcc   0x00001382       0x44 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001382                __udivmodsi4
+ .text.libgcc   0x000013c6        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000013c6        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x000013c6                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000013c6        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000013c6                exit
+                0x000013c6                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000013c6        0x4 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000013ca                _etext = .
+
+.data           0x00800060        0x0 load address 0x000013ca
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./USART/USART_prog.o
+ .data          0x00800060        0x0 ./Timer/TIMER_prog.o
+ .data          0x00800060        0x0 ./GIE/GIE_prog.o
+ .data          0x00800060        0x0 ./DIO/DIO_prog.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800060        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060        0xe
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 ./USART/USART_prog.o
+ .bss           0x00800060        0x0 ./Timer/TIMER_prog.o
+ .bss           0x00800060        0x0 ./GIE/GIE_prog.o
+ .bss           0x00800060        0x0 ./DIO/DIO_prog.o
+ .bss           0x00800060        0x0 ./main.o
+ .bss           0x00800060        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800060        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 f:/courses/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800060        0x6 ./USART/USART_prog.o
+                0x00800060                USART_CallBack_DATA_EMBTY
+                0x00800062                USART_CallBack_ISR_COMP_RX
+                0x00800064                USART_CallBack_COMP_TX
+ COMMON         0x00800066        0x8 ./Timer/TIMER_prog.o
+                0x00800066                TIMER2_CTC_CallBack
+                0x00800068                TIMER2_OV_CallBack
+                0x0080006a                TIMER0_CTC_CallBack
+                0x0080006c                TIMER0_OV_CallBack
+                0x0080006e                PROVIDE (__bss_end, .)
+                0x000013ca                __data_load_start = LOADADDR (.data)
+                0x000013ca                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080006e        0x0
+                0x0080006e                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080006e                PROVIDE (__noinit_end, .)
+                0x0080006e                _end = .
+                0x0080006e                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x189c
+ *(.stab)
+ .stab          0x00000000      0x5ac ./USART/USART_prog.o
+ .stab          0x000005ac      0x720 ./Timer/TIMER_prog.o
+                                0x72c (size before relaxing)
+ .stab          0x00000ccc      0x1b0 ./GIE/GIE_prog.o
+                                0x1bc (size before relaxing)
+ .stab          0x00000e7c      0x75c ./DIO/DIO_prog.o
+                                0x768 (size before relaxing)
+ .stab          0x000015d8      0x2c4 ./main.o
+                                0x33c (size before relaxing)
+
+.stabstr        0x00000000      0xb4d
+ *(.stabstr)
+ .stabstr       0x00000000      0xb4d ./USART/USART_prog.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(RECIVE.elf elf32-avr)
+LOAD linker stubs

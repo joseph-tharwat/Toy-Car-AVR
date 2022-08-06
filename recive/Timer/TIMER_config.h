@@ -1,0 +1,78 @@
+/************************************************/
+/*Title		  : TIMER peripheral CONFIGER file    */
+/*Author 	  : fam shokry						*/
+/*Release     : 1.0								*/
+/*Last Update : Aug 25, 2021					*/
+/************************************************/
+
+
+
+
+#ifndef TIMER_CONFIG_H_
+#define TIMER_CONFIG_H_
+
+////////////////////////////////////////////TIMER_0
+/*MODE*/
+//TIMER_u8_NORMAL
+//TIMER_u8_CTC
+//TIMER_u8_PWM
+//TIMER_u8_FAST_PWM
+
+#define TIMER_u8_TIMER0_MODE			TIMER_u8_FAST_PWM
+
+
+
+/*TIMER_0 CTC EVENT*/
+//TIMER_u8_NO_ACTION 		
+//TIMER_u8_TOGGLE 			//not in pwm and fast pwm
+//TIMER_u8_SET 	
+//TIMER_u8_CLEAR 	
+
+#define TIMER_u8_TIMER0_EVENT		TIMER_u8_CLEAR
+
+
+/*CHOOSHE CLOCK SOURCE*/
+//TIMER_u8_NO_CLOCK_SOURCE
+//TIMER_u8_INTERNAL_CLOCK
+//TIMER_u8_INTERNAL_CLOCK_PRE_8
+//TIMER_u8_INTERNAL_CLOCK_PRE_64
+//TIMER_u8_INTERNAL_CLOCK_PRE_256
+//TIMER_u8_INTERNAL_CLOCK_PRE_1024
+//TIMER_u8_EXTERNAL_CLOCK_FALLING_EDGE
+//TIMER_u8_EXTERNAL_CLOCK_RISING_EDGE
+#define TIMER_u8_TIMER0_CLOCK_MODE		TIMER_u8_INTERNAL_CLOCK_PRE_256
+
+////////////////////////////////////////////TIMER_2
+/*MODE*/
+//TIMER_u8_NORMAL
+//TIMER_u8_CTC
+//TIMER_u8_PWM
+//TIMER_u8_FAST_PWM
+
+#define TIMER_u8_TIMER2_MODE			TIMER_u8_FAST_PWM
+
+
+
+/*TIMER_0 CTC EVENT*/
+//TIMER_u8_NO_ACTION
+//TIMER_u8_TOGGLE 				//not in pwm and fast pwm
+//TIMER_u8_SET
+//TIMER_u8_CLEAR
+
+#define TIMER_u8_TIMER2_EVENT		TIMER_u8_CLEAR
+
+
+/*CHOOSHE CLOCK SOURCE*/
+//TIMER_u8_NO_CLOCK_SOURCE 	
+//TIMER_u8_INTERNAL_CLOCK
+//TIMER_u8_INTERNAL_CLOCK_PRE_8	
+//TIMER_u8_INTERNAL_CLOCK_PRE_64
+//TIMER_u8_INTERNAL_CLOCK_PRE_256
+//TIMER_u8_INTERNAL_CLOCK_PRE_1024
+//TIMER_u8_EXTERNAL_CLOCK_FALLING_EDGE
+//TIMER_u8_EXTERNAL_CLOCK_RISING_EDGE
+#define TIMER_u8_TIMER2_CLOCK_MODE		TIMER_u8_INTERNAL_CLOCK_PRE_256
+
+
+
+#endif

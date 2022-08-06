@@ -1,0 +1,29 @@
+Project team:
+فام شكري وديع
+جوزيف ثروت جميل
+كيرلس عصمت بنيامين 
+Toy Car with remote control :
+ Car that has speed control , direction control , front ledd and buzzer and can control it with remote control or your by Bluetooth connection .
+Main components:
+ATmega32
+LEDs
+Buzzer
+Servo Motor
+Stepper Motor
+Bluetooth Modul
+DC Motor Control L293D
+Used Drivers:
+USART
+ADC
+EXITI 
+GIE 
+Timer (PWM)
+ Servo motor 
+ Dc motor 
+
+Note : The Proteus file is from  proteus 8.12 (the last version of Proteus)
+You can download it from here
+https://mega.nz/file/87ByHBAb#r8ILTqXYnL9GFrqGF2nylEVdBnZrhPKb9RkG0G5BTzc
+
+and to pair match the bluetooth modules with each other you need to use "Launch Virtual Serial Port Driver" program
+https://www.virtual-serial-port.org/
